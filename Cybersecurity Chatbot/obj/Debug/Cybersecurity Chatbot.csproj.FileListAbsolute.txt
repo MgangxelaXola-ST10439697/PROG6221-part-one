@@ -1,0 +1,8 @@
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\bin\Debug\Cybersecurity Chatbot.exe.config
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\bin\Debug\Cybersecurity Chatbot.exe
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\bin\Debug\Cybersecurity Chatbot.pdb
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.exe
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.pdb
+C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\bin\Debug\voiceMessage.wav
