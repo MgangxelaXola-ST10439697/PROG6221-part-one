@@ -63,7 +63,15 @@ namespace Cybersecurity_Chatbot
 
                 if (userInput.Contains("hello") || userInput.Contains("hey"))
                 {
-                    Console.WriteLine("Chatbot: Hello! How can I assist you today?");
+                    Console.WriteLine($"Chatbot: Hello, {userName}! How are you?");
+                }
+                else if (userInput.Contains("how are you") || userInput.Contains("how are you doing"))
+                {
+                    Console.WriteLine("Chatbot: I'm just a program, but I'm here to help you!");
+                }
+                else if (userInput.Contains("what is cybersecurity"))
+                {
+                    Console.WriteLine("Chatbot: Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.");
                 }
                 else if (userInput.Contains("what is cybersecurity?"))
                 {
