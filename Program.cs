@@ -51,10 +51,14 @@ namespace Cybersecurity_Chatbot
            
             }
 
+            Console.Write("Please enter your name: ");
+            string userName = Console.ReadLine();
+            Console.WriteLine($"Hello, {userName}! I'm here to help you with cybersecurity questions. Type 'exit' or 'quit' to end the chat.");
+
 
             while (true)
             {
-                Console.Write("You: ");
+                Console.Write($"{userName}: ");
                 string userInput = Console.ReadLine().ToLower();
 
                 if (userInput.Contains("hello") || userInput.Contains("hey"))
@@ -83,7 +87,7 @@ namespace Cybersecurity_Chatbot
                 }
                 else if (userInput.Contains("exit") || userInput.Contains("quit"))
                 {
-                    Console.WriteLine("Chatbot: Goodbye! Stay safe online.");
+                    Console.WriteLine($"Chatbot: Goodbye, {userName}! Stay safe online.");
                     break;
                 }
                 else
