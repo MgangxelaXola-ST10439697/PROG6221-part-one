@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Media;
+using System.Threading;
+
 
 namespace Cybersecurity_Chatbot
 {
@@ -17,10 +19,13 @@ namespace Cybersecurity_Chatbot
         {
 
             Logo();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("════════════════════════════════════════════════════════════");
+            Console.WriteLine(" Welcome to the Cybersecurity Chatbot! Talk to me :)");
+            Console.WriteLine("════════════════════════════════════════════════════════════");
+            Console.ResetColor();
 
-            Console.WriteLine("Welcome to the Cybersecurity Chatbot! Ask me anything");
-
-             void Logo()
+            void Logo()
             {
                 Console.WriteLine(@"   ______          __                                                             _   _             ______            _    ");
                 Console.WriteLine(@" .' ___  |        [  |                                                           (_) / |_          |_   _ \          / |_  ");
@@ -38,7 +43,7 @@ namespace Cybersecurity_Chatbot
 
                 if (File.Exists(soundFilePath))
                 {
-                   
+
                     using (SoundPlayer player = new SoundPlayer(soundFilePath))
                     {
                         player.PlaySync();
@@ -46,51 +51,73 @@ namespace Cybersecurity_Chatbot
                 }
             }
             catch (Exception)
-            { 
+            {
 
-           
+
             }
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.Write("\n Please enter your name: ");
+            Console.ResetColor();
+            string userName = Console.ReadLine();
+
+            TypingEffect($"\n Hello, {userName}! I'm here to help you with cybersecurity questions.");
+            TypingEffect("Type 'exit' or 'quit' to end the chat.\n");
 
 
             while (true)
             {
-                Console.Write("You: ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write($"\n{userName}: ");
+                Console.ResetColor();
                 string userInput = Console.ReadLine().ToLower();
+
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("Chatbot: ");
+                Console.ResetColor();
 
                 if (userInput.Contains("hello") || userInput.Contains("hey"))
                 {
-                    Console.WriteLine("Chatbot: Hello! How can I assist you today?");
+                    TypingEffect("Chatbot: Hello! How can I assist you today?");
                 }
                 else if (userInput.Contains("what is cybersecurity?"))
                 {
-                    Console.WriteLine("Chatbot: Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.");
+                    TypingEffect("Chatbot: Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.");
                 }
                 else if (userInput.Contains("what are the types of cyber attacks"))
                 {
-                    Console.WriteLine("Chatbot: Common types of cyber attacks include phishing, malware, ransomware, and denial-of-service attacks.");
+                    TypingEffect("Chatbot: Common types of cyber attacks include phishing, malware, ransomware, and denial-of-service attacks.");
                 }
                 else if (userInput.Contains("how can i protect myself online"))
                 {
-                    Console.WriteLine("Chatbot: Use strong passwords, enable two-factor authentication, and be cautious of suspicious emails.");
+                    TypingEffect("Chatbot: Use strong passwords, enable two-factor authentication, and be cautious of suspicious emails.");
                 }
                 else if (userInput.Contains("what is phishing"))
                 {
-                    Console.WriteLine("Chatbot: Phishing is a type of cyber attack where attackers impersonate legitimate organizations to steal sensitive information.");
+                    TypingEffect("Chatbot: Phishing is a type of cyber attack where attackers impersonate legitimate organizations to steal sensitive information.");
                 }
                 else if (userInput.Contains("what is malware"))
                 {
-                    Console.WriteLine("Chatbot: Malware is malicious software designed to harm or exploit any programmable device or network.");
+                    TypingEffect("Chatbot: Malware is malicious software designed to harm or exploit any programmable device or network.");
                 }
                 else if (userInput.Contains("exit") || userInput.Contains("quit"))
                 {
-                    Console.WriteLine("Chatbot: Goodbye! Stay safe online.");
+                    TypingEffect("Chatbot: Goodbye! Stay safe online.");
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("Chatbot: I'm sorry, I don't understand that. Can you ask something else?");
+                    TypingEffect("Chatbot: I'm sorry, I don't understand that. Can you ask something else?");
                 }
+            }
+            void TypingEffect(string text)
+            {
+                foreach (char c in text)
+                {
+                    Console.Write(c);
+                    Thread.Sleep(30); // Typing speed
+                }
+                Console.WriteLine();
             }
         }
     }
-    } 
+}

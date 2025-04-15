@@ -6,3 +6,11 @@ C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cyber
 C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.exe
 C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.pdb
 C:\Users\lab_services_student\source\repos\Cybersecurity Chatbot\bin\Debug\voiceMessage.wav
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\bin\Debug\voiceMessage.wav
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\bin\Debug\Cybersecurity Chatbot.exe.config
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\bin\Debug\Cybersecurity Chatbot.exe
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\bin\Debug\Cybersecurity Chatbot.pdb
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.csproj.AssemblyReference.cache
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.csproj.CoreCompileInputs.cache
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.exe
+C:\Users\Xola\Source\Repos\PROG6221-part-one\Cybersecurity Chatbot\obj\Debug\Cybersecurity Chatbot.pdb
