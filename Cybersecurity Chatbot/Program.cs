@@ -77,7 +77,11 @@ namespace Cybersecurity_Chatbot
 
                 if (userInput.Contains("hello") || userInput.Contains("hey"))
                 {
-                    TypingEffect("Chatbot: Hello! How can I assist you today?");
+                    TypingEffect($"Chatbot: Hello, {userName}! How are you?");
+                }
+                else if (userInput.Contains("how are you") || userInput.Contains("how are you doing"))
+                {
+                    TypingEffect("Chatbot: I'm just a program, but I'm here to help you!");
                 }
                 else if (userInput.Contains("what is cybersecurity?"))
                 {
@@ -101,7 +105,7 @@ namespace Cybersecurity_Chatbot
                 }
                 else if (userInput.Contains("exit") || userInput.Contains("quit"))
                 {
-                    TypingEffect("Chatbot: Goodbye! Stay safe online.");
+                    TypingEffect("Chatbot: Goodbye! Stay safe online;).");
                     break;
                 }
                 else
