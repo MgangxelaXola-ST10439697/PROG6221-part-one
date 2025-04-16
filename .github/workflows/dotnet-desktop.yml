@@ -79,7 +79,9 @@ jobs:
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: dotnet test 
+      run: dotnet test CybersecurityChatbot.Test/CybersecurityChatbot.Tests.csproj
+      working-directory: ./CybersecurityChatbot
+      
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
